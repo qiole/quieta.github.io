@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html>
+<head hexo-theme='https://volantis.js.org/#'>
+  <meta charset="utf-8">
+  <!-- SEO相关 -->
+  
+    
+  
+  <!-- 渲染优化 -->
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- 页面元数据 -->
+  
+    <title>hexo的搭建 - shinrun</title>
+  
+  
+    <meta name="description" content="关于hexohexo是一个快速、简洁且高效的博客框架,Hexo支持Github Flavored Markdown的所有功能, 甚至可以整合Octopress的大多数插件. 并自己也拥有强大的插件系统">
+  
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="shinrun">
+  
+
+  <!-- import meta -->
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13/css/all.min.css">
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+
+  
+
+  
+  <link rel="shortcut icon" type='image/x-icon' href="http://q80egzbfm.bkt.clouddn.com/http://q80egzbfm.bkt.clouddn.com/picGOlogo.png">
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
+  
+
+  <!-- import link -->
+  
+
+  
+    
+<link rel="stylesheet" href="/css/style.css">
+
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+  
+
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.js"></script>
+</head>
+
+<body>
+  
+  <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+<header class="l_header shadow blur">
+  <div class='container'>
+  <div class='wrapper'>
+    <div class='nav-sub'>
+      <p class="title"></p>
+      <ul class='switcher nav-list-h'>
+        <li><a class="s-comment fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+          <li><a class="s-toc fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+      </ul>
+    </div>
+		<div class="nav-main">
+      
+        
+        <a class="title flat-box" target="_self" href='/'>
+          
+          
+          
+          
+            SHINRUN <b><sup style='color:#3AA757'></sup></b>
+          
+        </a>
+      
+
+			<div class='menu navigation'>
+				<ul class='nav-list-h'>
+          
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/recent/
+                  
+                  
+                  
+                    id="recent"
+                  >
+                  
+                    <i class='fas fa-clock fa-fw fa-fw'></i>
+                  
+                  近期
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  
+                    <i class='fa fa-fw fa-home fa-fw'></i>
+                  
+                  首页
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  
+                    <i class='fa fa-fw fa-archive fa-fw'></i>
+                  
+                  索引
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/categories/
+                  
+                  
+                  
+                    id="categories"
+                  >
+                  
+                    <i class='fas fa-folder-open fa-fw fa-fw'></i>
+                  
+                  文章分类
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/tags/
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  
+                    <i class='fas fa-tags fa-fw fa-fw'></i>
+                  
+                  文章标签
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://github.com/xaoxuu/hexo-theme-volantis/
+                  
+                  
+                  
+                    id="https:githubcomxaoxuuhexo-theme-volantis"
+                  >
+                  
+                    <i class='fas fa-list fa-fw fa-fw'></i>
+                  
+                  时间轴
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/note/
+                  
+                  
+                  
+                    id="note"
+                  >
+                  
+                    <i class='fas fa-file-alt fa-fw'></i>
+                  
+                  笔记
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/tag-plugins/
+                  
+                  
+                  
+                    id="tag-plugins"
+                  >
+                  
+                    <i class='fas fa-pen-alt fa-fw'></i>
+                  
+                  随笔
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/about/
+                  
+                  
+                  
+                    id="about"
+                  >
+                  
+                    <i class='fas fa-info-circle fa-fw fa-fw'></i>
+                  
+                  关于
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" 
+                  
+                  
+                  >
+                  
+                    <i class='fas fa-ellipsis-v fa-fw'></i>
+                  
+                  更多
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/sites/
+                  
+                  
+                  
+                    id="sites"
+                  >
+                  
+                    <i class='fas fa-user-circle fa-fw fa-fw'></i>
+                  
+                  我和本站
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://github.com/xaoxuu/hexo-theme-volantis/releases/
+                  
+                  
+                  
+                    id="https:githubcomxaoxuuhexo-theme-volantisreleases"
+                  >
+                  
+                    <i class='fas fa-bookmark fa-fw fa-fw'></i>
+                  
+                  我的收藏
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <hr>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" 
+                  
+                  
+                  >
+                  
+                    <i class='fas fa-star fa-fw fa-fw'></i>
+                  
+                  我的分享
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/fas%20fa-compact-disc%20fa-fw
+                  
+                  
+                  
+                    id="fas20fa-compact-disc20fa-fw"
+                  >
+                  
+                  mac实用工具
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://github.com/xaoxuu/volantis-docs/
+                  
+                  
+                  
+                    id="https:githubcomxaoxuuvolantis-docs"
+                  >
+                  
+                  看 本站源码
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://github.com/xaoxuu/hexo-theme-volantis/issues/
+                  
+                  
+                  
+                    id="https:githubcomxaoxuuhexo-theme-volantisissues"
+                  >
+                  
+                  提 Issue
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <hr>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  
+                    <i class='fas fa-link fa-fw fa-fw'></i>
+                  
+                  我的友链
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/examples/
+                  
+                  
+                  
+                    id="examples"
+                  >
+                  
+                    <i class='fab fa-github fa-fw fa-fw'></i>
+                  
+                  我的 GitHub
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <hr>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box">
+                  <i class='fas fa-compact-disc fa-fw music'></i>
+                  背景音乐
+                </a>
+                <ul class="list-v">
+                  <li class='header'>
+                    <div class="aplayer-container">
+                      
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='false'
+      list-max-height='340px'
+      server='netease'
+      type='playlist'
+      id='2642054023'
+      list-folded='true'>
+    </meting-js>
+  
+
+
+                    </div>
+                  </li>
+                </ul>
+              <li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+				</ul>
+			</div>
+
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="搜索" />
+        </form>
+      </div>
+
+			<ul class='switcher nav-list-h'>
+				
+					<li><a class="s-search fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
+				
+				<li>
+          <a class="s-menu fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a>
+          <ul class="menu-phone list-v navigation white-box">
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/recent/
+                  
+                  
+                  
+                    id="recent"
+                  >
+                  
+                    <i class='fas fa-clock fa-fw fa-fw'></i>
+                  
+                  近期
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  
+                    <i class='fa fa-fw fa-home fa-fw'></i>
+                  
+                  首页
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  
+                    <i class='fa fa-fw fa-archive fa-fw'></i>
+                  
+                  索引
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/categories/
+                  
+                  
+                  
+                    id="categories"
+                  >
+                  
+                    <i class='fas fa-folder-open fa-fw fa-fw'></i>
+                  
+                  文章分类
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/tags/
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  
+                    <i class='fas fa-tags fa-fw fa-fw'></i>
+                  
+                  文章标签
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://github.com/xaoxuu/hexo-theme-volantis/
+                  
+                  
+                  
+                    id="https:githubcomxaoxuuhexo-theme-volantis"
+                  >
+                  
+                    <i class='fas fa-list fa-fw fa-fw'></i>
+                  
+                  时间轴
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/note/
+                  
+                  
+                  
+                    id="note"
+                  >
+                  
+                    <i class='fas fa-file-alt fa-fw'></i>
+                  
+                  笔记
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/tag-plugins/
+                  
+                  
+                  
+                    id="tag-plugins"
+                  >
+                  
+                    <i class='fas fa-pen-alt fa-fw'></i>
+                  
+                  随笔
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/about/
+                  
+                  
+                  
+                    id="about"
+                  >
+                  
+                    <i class='fas fa-info-circle fa-fw fa-fw'></i>
+                  
+                  关于
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" 
+                  
+                  
+                  >
+                  
+                    <i class='fas fa-ellipsis-v fa-fw'></i>
+                  
+                  更多
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/sites/
+                  
+                  
+                  
+                    id="sites"
+                  >
+                  
+                    <i class='fas fa-user-circle fa-fw fa-fw'></i>
+                  
+                  我和本站
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://github.com/xaoxuu/hexo-theme-volantis/releases/
+                  
+                  
+                  
+                    id="https:githubcomxaoxuuhexo-theme-volantisreleases"
+                  >
+                  
+                    <i class='fas fa-bookmark fa-fw fa-fw'></i>
+                  
+                  我的收藏
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <hr>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" 
+                  
+                  
+                  >
+                  
+                    <i class='fas fa-star fa-fw fa-fw'></i>
+                  
+                  我的分享
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/fas%20fa-compact-disc%20fa-fw
+                  
+                  
+                  
+                    id="fas20fa-compact-disc20fa-fw"
+                  >
+                  
+                  mac实用工具
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://github.com/xaoxuu/volantis-docs/
+                  
+                  
+                  
+                    id="https:githubcomxaoxuuvolantis-docs"
+                  >
+                  
+                  看 本站源码
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://github.com/xaoxuu/hexo-theme-volantis/issues/
+                  
+                  
+                  
+                    id="https:githubcomxaoxuuhexo-theme-volantisissues"
+                  >
+                  
+                  提 Issue
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <hr>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  
+                    <i class='fas fa-link fa-fw fa-fw'></i>
+                  
+                  我的友链
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/examples/
+                  
+                  
+                  
+                    id="examples"
+                  >
+                  
+                    <i class='fab fa-github fa-fw fa-fw'></i>
+                  
+                  我的 GitHub
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <hr>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box">
+                  <i class='fas fa-compact-disc fa-fw music'></i>
+                  背景音乐
+                </a>
+                <ul class="list-v">
+                  <li class='header'>
+                    <div class="aplayer-container">
+                      
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='false'
+      list-max-height='340px'
+      server='netease'
+      type='playlist'
+      id='2642054023'
+      list-folded='true'>
+    </meting-js>
+  
+
+
+                    </div>
+                  </li>
+                </ul>
+              <li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+          </ul>
+        </li>
+			</ul>
+		</div>
+	</div>
+  </div>
+</header>
+
+<script>setLoadingBarProgress(40);</script>
+
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      
+
+<div class='l_main'>
+  
+
+  
+    <article id="post" class="post white-box shadow article-type-post" itemscope itemprop="blogPost">
+      
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/2020/03/07/hexo/">
+        hexo的搭建
+      </a>
+    </h1>
+  
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+<div class='new-meta-item author'>
+  <a href="" rel="nofollow">
+    <img src="">
+    <p></p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Mar 7, 2020</p>
+  </a>
+</div>
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-04T21:51:03+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Apr 4, 2020</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          
+          <h5 id="关于hexo"><a href="#关于hexo" class="headerlink" title="关于hexo"></a>关于hexo</h5><p>hexo是一个快速、简洁且高效的博客框架,Hexo支持Github Flavored Markdown的所有功能, 甚至可以整合Octopress的大多数插件. 并自己也拥有强大的插件系统</p>
+<a id="more"></a>
+<p>Hexo同时也是GitHub上的开源项目,如果想要更加全面的了解Hexo可以到其官网 了解更多的细节。</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul>
+<li>下载<a href="https://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="noopener">Git</a></li>
+<li>下载<a href="https://nodejs.org/en/download/。" target="_blank" rel="noopener">node.js</a>并安装,默认会安装npm(<a href="https://www.runoob.com/git/git-install-setup.html" target="_blank" rel="noopener">教程</a>) 查看版本 <code>node -v nmp -v</code>;<br>  <em>（注:配置好node.js的环境变量）</em></li>
+<li>下载安装hexo 方法(基于npm/cnpm包的Git命令安装)<br>方法一:打开cmd<code>输入:nmp install -g hexo</code>（可能会等待很久）<br>方法二:下载安装cnpm淘宝镜像<code>输入npm install -g cnpm --registry=https://registry.npm.taobao.org</code>安装完成后<code>输入cnpm install -g hexo-cli</code> 稍等片刻就安装好了 <code>hexo -v</code> 查看版本号 <h3 id="本地搭建hexo静态博客"><a href="#本地搭建hexo静态博客" class="headerlink" title="本地搭建hexo静态博客"></a>本地搭建hexo静态博客</h3></li>
+<li>新建一个文件夹（如blog\自己定义）</li>
+<li>点击文件夹,右击运行Git Bash here,<code>输入hexo init</code>(生成模块)</li>
+<li>生成完之后 <code>输入 hexo server</code> 运行程序,就可以访问本地localhost:4000可以看到博客已经搭建完成(如果访问不了,大概就是端口号被占用输入<code>hexo s -p 5000</code>更改端口号)</li>
+</ul>
+<h3 id="next主题安装"><a href="#next主题安装" class="headerlink" title="next主题安装"></a>next主题安装</h3><ul>
+<li>进入blog目录下的themes目录使用Git Bash here打开，进行一下操作:<strong>(一定要下载到themes文件下)</strong></li>
+<li>下载主题(以next主题为例)<br>(注:可以去<a href="https://hexo.io/themes/" target="_blank" rel="noopener">hexo</a>官网自行选择主题获取主题代码)</li>
+<li><code>输入 git clone https://github.com/iissnan/hexo-theme-next.git（主题的地址）</code></li>
+<li>打开站点下的_config.yml配置文件,将themes修改为next(注:下载的主题文件夹的名字)建议使用ctrl+f搜索themes关键字</li>
+</ul>
+<h3 id="next主题的使用"><a href="#next主题的使用" class="headerlink" title="next主题的使用"></a>next主题的使用</h3><ul>
+<li>下载好主题后你blog站点下themes文件夹下就会有你下载的主题文件夹,打开themes下的hexo-theme-next(主题文件夹)里面会有一个_config配置文件</li>
+<li>进入_config后找到Schemes里面会有4不同类型的主题样式(依个人爱好自行选择)</li>
+<li>关于hexo-next主题下的一些个性化配置，请参考:(Next主题配置)[]</li>
+</ul>
+<blockquote>
+<p>补注<br>hexo g hexo s （本地查看） localhost:4000 hexo g(生成文件)<br>hexo d 推到远端github中<br>hexo clean 清除缓存</p>
+</blockquote>
+
+          
+        </div>
+        
+          
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          
+
+        
+      
+    </div>
+  </section>
+
+
+        
+        
+          <div class="prev-next">
+            
+            
+              <a class='next' href='/2020/03/06/next/'>
+                <p class='title'>next主题配置以及如何部署到github上<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+                <p class='content'>next主题配置next主题样式设置
+通过修改next主题下的_config.yml的scheme字段，配置不同的风格。
+12345# Schemesscheme: Muse# scheme: ...</p>
+              </a>
+            
+          </div>
+        
+      </section>
+    </article>
+  
+
+  
+    
+  
+    
+    
+
+<section class="widget page shadow desktop mobile">
+  
+  <header>
+    
+      <i class="fas fa-headset fa-fw" aria-hidden="true"></i><span class='name'>帮助</span>
+    
+  </header>
+
+
+  <div class='content'>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+      
+    
+      
+    
+  </div>
+</section>
+
+  
+
+
+  
+
+  
+    <!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box comments shadow">
+    <section class="article typo">
+      <p ct><i class='fas fa-comments'></i> 评论</p>
+      
+      
+      
+      
+      
+        <section id="comments">
+          <div id="valine_container" class="valine_thread">
+            <i class="fas fa-spinner fa-spin fa-fw"></i>
+          </div>
+        </section>
+      
+    </section>
+  </article>
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: 'hexo的搭建',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
+  
+  
+    
+    
+
+<section class="widget grid shadow desktop mobile">
+  
+  <header>
+    
+      <i class="fas fa-map-signs fa-fw" aria-hidden="true"></i><span class='name'>文档导航</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="grid navigation fixed">
+      
+        <a class="flat-box" title="/faqs/" href="/faqs/"
+          
+          
+          id="faqs">
+          
+            <i class="fas fa-question-circle fa-fw" aria-hidden="true"></i>
+          
+          常见问题
+        </a>
+      
+        <a class="flat-box" title="/examples/" href="/examples/"
+          
+          
+          id="examples">
+          
+            <i class="fas fa-play-circle fa-fw" aria-hidden="true"></i>
+          
+          示例博客
+        </a>
+      
+        <a class="flat-box" title="/contributors/" href="/contributors/"
+          
+          
+          id="contributors">
+          
+            <i class="fas fa-handshake fa-fw" aria-hidden="true"></i>
+          
+          特别感谢
+        </a>
+      
+        <a class="flat-box" title="/archives/" href="/archives/"
+          
+          
+          id="archives">
+          
+            <i class="fas fa-file-alt fa-fw" aria-hidden="true"></i>
+          
+          测试博文
+        </a>
+      
+        <a class="flat-box" title="https://github.com/xaoxuu/hexo-theme-volantis/" href="https://github.com/xaoxuu/hexo-theme-volantis/"
+          
+            rel="external nofollow noopener noreferrer"
+          
+          
+            target="_blank"
+          
+          id="https:githubcomxaoxuuhexo-theme-volantis">
+          
+            <i class="fas fa-file-code fa-fw" aria-hidden="true"></i>
+          
+          主题源码
+        </a>
+      
+        <a class="flat-box" title="https://github.com/xaoxuu/hexo-theme-volantis/releases/" href="https://github.com/xaoxuu/hexo-theme-volantis/releases/"
+          
+            rel="external nofollow noopener noreferrer"
+          
+          
+            target="_blank"
+          
+          id="https:githubcomxaoxuuhexo-theme-volantisreleases">
+          
+            <i class="fas fa-tags fa-fw" aria-hidden="true"></i>
+          
+          更新日志
+        </a>
+      
+    </div>
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
+<section class="widget list shadow desktop mobile">
+  
+  <header>
+    
+      <i class="fas fa-rss-square fa-fw" aria-hidden="true"></i><span class='name'>公告</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <ul class="list entry navigation">
+      
+        <li><a class="flat-box" title="https://github.com/xaoxuu/hexo-theme-volantis/issues/215" href="https://github.com/xaoxuu/hexo-theme-volantis/issues/215"
+          
+          
+          id="https:githubcomxaoxuuhexo-theme-volantisissues215"
+          >
+          <div class='name'>
+            
+              <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;关于文档的更新
+          </div>
+          
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+  
+
+  
+
+  
+    
+    
+
+
+  <section class="widget toc-wrapper shadow desktop mobile">
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#关于hexo"><span class="toc-text">关于hexo</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#准备工作"><span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本地搭建hexo静态博客"><span class="toc-text">本地搭建hexo静态博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#next主题安装"><span class="toc-text">next主题安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#next主题的使用"><span class="toc-text">next主题的使用</span></a>
+    </div>
+  </section>
+
+
+  
+
+
+</aside>
+
+
+  
+  <footer class="clearfix">
+    <br><br>
+    
+      
+        <div class="aplayer-container">
+          
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='false'
+      list-max-height='340px'
+      server='netease'
+      type='playlist'
+      id='2642054023'
+      list-folded='true'>
+    </meting-js>
+  
+
+
+        </div>
+      
+    
+      
+        <br>
+        <div class="social-wrapper">
+          
+            
+              <a href="/atom.xml"
+                class="social fas fa-rss flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+            
+              <a href="/434299971@qq.com"
+                class="social fas fa-envelope flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+            
+              <a href="https://github.com/quieta"
+                class="social fab fa-github flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+            
+              <a href="https://music.163.com/#/user/home?id=63035382"
+                class="social fas fa-headphones-alt flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+        </div>
+      
+    
+      
+        <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
+</div>
+      
+    
+      
+        Use
+        <a href="https://volantis.js.org/" target="_blank" class="codename">shinrun</a>
+        as theme
+        
+          , 
+          total visits
+          <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+          times
+        
+      
+    
+      
+        <div class='copyright'>
+        <p><a href="https://github.com/quieta" target="_blank" rel="noopener">Copyright © 2020 Mr. L</a></p>
+
+        </div>
+      
+    
+  </footer>
+
+<script>setLoadingBarProgress(80);</script>
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4/dist/jquery.min.js"></script>
+
+
+  <script>
+    
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/" || "/";
+    if (!ROOT.endsWith('/')) ROOT += '/';
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2/js/instant_page.js" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+  
+  
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+    <script type="text/javascript">
+      $(function(){
+        var imgs=["https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg"];
+        if ('true' == 'true') {
+          function shuffle(arr){
+            /*From countercurrent-time*/
+            var n = arr.length;
+            while(n--) {
+              var index = Math.floor(Math.random() * n);
+              var temp = arr[index];
+              arr[index] = arr[n];
+              arr[n] = temp;
+            }
+          }
+          shuffle(imgs);
+        }
+        if ('.cover') {
+          $('.cover').backstretch(
+            imgs,
+          {
+            duration: "20000",
+            fade: "1500"
+          });
+        } else {
+          $.backstretch(
+            imgs,
+          {
+            duration: "20000",
+            fade: "1500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script>
+
+  
+
+
+
+
+
+
+
+
+  
+    
+<script src="https://valine.js.org/script/Valine.min.js"></script>
+
+  
+  <script>
+  var GUEST_INFO = ['nick','mail','link'];
+  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var notify = 'true' == 'true';
+  var verify = 'true' == 'true';
+  var valine = new Valine();
+  valine.init({
+    el: '#valine_container',
+    notify: notify,
+    verify: verify,
+    guest_info: guest_info,
+    
+    appId: "dELIU2iwcWeEX5AWAGxG6vlh-gzGzoHsz",
+    appKey: "wcdDiqM87l82ihVbdWFl3rBw",
+    placeholder: "快来评论吧~",
+    pageSize:'10',
+    avatar:'mp',
+    lang:'zh-cn',
+    visitor: 'false',
+    highlight:'true'
+  })
+  </script>
+
+
+
+  
+<script src="/js/app.js"></script>
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.4/js/search.js"></script>
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2/js/comment_typing.js"></script>
+
+
+
+<!-- 复制 -->
+
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="fas fa-copy"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('fa-copy');
+        $icon.addClass('fa-clipboard-check');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('fa-copy');
+        $icon.addClass('fa-exclamation-triangle');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+
+
+<!-- fancybox -->
+
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("div.fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+  <!--浏览器搞笑标题-->
+<script type="text/javascript" src="/js/FunnyTitle.js"></script>
+<script src="/live2d-widget-master/autoload.js"></script>
+<script>
+  var pjax = new Pjax({
+    elements: "a",
+    selectors: [
+      "title", //pjax加载标题
+      ".l_main", //pjax加载主内容
+      ".l_side", //pjax加载侧边栏
+      ".switcher .h-list", // 使手机端的搜索框与菜单栏生效
+    ]
+  })
+  //加载fancybox
+  function LoadFancybox(){
+    $(".article-entry").find("img").each(function () {
+      //渲染fancy box
+      var t = document.createElement("a");
+      $(t).attr("data-fancybox", "gallery"),
+      $(t).attr("href", $(this).attr("src")),
+      $(t).attr("margin","0 auto"),
+      $(this).wrap(t)
+    })
+  }
+
+  // pjax加载结束后执行函数
+  document.addEventListener('pjax:complete', function (){
+    LoadFancybox();
+  });
+
+  // 窗口监听load(加载、刷新)事件，执行LoadFancybox()函数
+  window.addEventListener('load',function(){
+    LoadFancybox();
+  });
+
+  </script>  
+  <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  <!-- <script type="text/javascript" src="/dist/music.js"></script> -->
+  <!-- <link rel="stylesheet" href="/dist/APlayer.min.css"> -->
+  <!-- <div id="aplayer"></div> -->
+  <!-- <script type="text/javascript" src="/dist/APlayer.min.js"></script> -->
+</body>
+</html>
