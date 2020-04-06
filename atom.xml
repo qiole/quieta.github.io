@@ -40,9 +40,9 @@
       <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
     
     
-      <category term="web" scheme="http://yoursite.com/tags/web/"/>
-    
       <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+      <category term="web" scheme="http://yoursite.com/tags/web/"/>
     
       <category term="js" scheme="http://yoursite.com/tags/js/"/>
     
@@ -105,11 +105,11 @@
       <category term="html5のcss3" scheme="http://yoursite.com/categories/html5%E3%81%AEcss3/"/>
     
     
+      <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
+    
       <category term="web" scheme="http://yoursite.com/tags/web/"/>
     
       <category term="css" scheme="http://yoursite.com/tags/css/"/>
-    
-      <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   
@@ -132,9 +132,9 @@
       <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
     
     
-      <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
-    
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   
@@ -185,9 +185,9 @@
       <category term="htmlのcss" scheme="http://yoursite.com/categories/html%E3%81%AEcss/"/>
     
     
-      <category term="css" scheme="http://yoursite.com/tags/css/"/>
-    
       <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
     
       <category term="html" scheme="http://yoursite.com/tags/html/"/>
     
