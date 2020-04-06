@@ -1632,14 +1632,14 @@ div.fancybox.stretch>p img {
 .l_main #comments #valine_container .vwrap {
   border-radius: 8px;
   border-style: dashed;
-  border: 1px dashed rgba(68,68,68,0.3);
+  border: 1px solid #cecece;
   transition: all 0.28s ease;
   -moz-transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
   -o-transition: all 0.28s ease;
 }
 .l_main #comments #valine_container .vwrap:hover {
-  border: 1px dashed #2196f3;
+  border: 1px solid #4791ff;
 }
 .l_main #comments #valine_container .vwrap .vheader .vinput {
   border-radius: 0;
