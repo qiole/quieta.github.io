@@ -2830,8 +2830,7 @@ footer .copyright p {
 }
 .l_main .post-list {
   position: relative;
-  /* margin: 16px auto; */
-  margin: 60px auto !important;
+  margin: 16px auto;
   column-gap: 16px;
 }
 .l_main .post-list.multiple-columns {
@@ -2911,7 +2910,7 @@ footer .copyright p {
 }
 .l_main .post {
   position: relative;
-  margin: 60px auto;
+  margin: 16px auto;
   padding: 24px;
   border-radius: 8px;
 }
@@ -4126,7 +4125,6 @@ ul.list-v >li>a.active {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 60px !important;
 }
 @media screen and (max-width: 768px) {
   .l_side {
