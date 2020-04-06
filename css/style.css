@@ -22,6 +22,12 @@
   font-weight: 'normal';
   font-style: 'normal';
 }
+@font-face {
+  font-family: 'Monaco';
+  src: url("https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/Monaco/Monaco.ttf");
+  font-weight: 'normal';
+  font-style: 'normal';
+}
 * {
   box-sizing: border-box;
   outline: none;
@@ -41,8 +47,8 @@ html {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 html >::-webkit-scrollbar {
-  height: 4px;
-  width: 4px;
+  height: 8px;
+  width: 8px;
 }
 html >::-webkit-scrollbar-track-piece {
   background: transparent;
@@ -50,10 +56,10 @@ html >::-webkit-scrollbar-track-piece {
 html >::-webkit-scrollbar-thumb {
   background: #2196f3;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 1px;
 }
 html >::-webkit-scrollbar-thumb:hover {
-  background: #ff5722;
+  background: #767676;
 }
 body {
   background-color: #f4f4f4;
@@ -1178,7 +1184,7 @@ div.tabs .tab-content .tab-pane.active {
   display: block;
   background: #f6f6f6;
   font-size: 0.8125rem;
-  font-family: Menlo, Monaco, courier, monospace, "Lucida Console", 'Source Code Pro', "Microsoft YaHei", Helvetica, Arial, sans-serif, 'Ubuntu';
+  font-family: 'Monaco', Menlo, Monaco, courier, monospace, "Lucida Console", 'Source Code Pro', "Microsoft YaHei", Helvetica, Arial, sans-serif, 'Ubuntu';
   border-radius: 4px;
   border: 1px solid #e7e7e7;
   transition: all 0.28s ease;
@@ -1512,7 +1518,7 @@ div.tabs .tab-content .tab-pane.active {
   -webkit-user-select: none;
   user-select: none;
   -webkit-appearance: none;
-  font-family: Menlo, Menlo, Monaco, courier, monospace, "Lucida Console", 'Source Code Pro', "Microsoft YaHei", Helvetica, Arial, sans-serif, 'Ubuntu';
+  font-family: Menlo, 'Monaco', Menlo, Monaco, courier, monospace, "Lucida Console", 'Source Code Pro', "Microsoft YaHei", Helvetica, Arial, sans-serif, 'Ubuntu';
   font-size: calc(0.8125rem - 1px);
   font-weight: bold;
   padding: 4px 8px;
@@ -2059,7 +2065,7 @@ div.fancybox.stretch>p img {
   overflow: auto;
 }
 .article p.has-jax {
-  font-family: Menlo, Monaco, courier, monospace, "Lucida Console", 'Source Code Pro', "Microsoft YaHei", Helvetica, Arial, sans-serif, 'Ubuntu';
+  font-family: 'Monaco', Menlo, Monaco, courier, monospace, "Lucida Console", 'Source Code Pro', "Microsoft YaHei", Helvetica, Arial, sans-serif, 'Ubuntu';
   background: rgba(255,255,255,0);
   padding: 16px 8px;
   border-radius: 4px;
@@ -2164,7 +2170,7 @@ div.fancybox.stretch>p img {
   overflow: auto;
   background: #f6f6f6;
   font-size: 0.8125rem;
-  font-family: Menlo, Monaco, courier, monospace, "Lucida Console", 'Source Code Pro', "Microsoft YaHei", Helvetica, Arial, sans-serif, 'Ubuntu';
+  font-family: 'Monaco', Menlo, Monaco, courier, monospace, "Lucida Console", 'Source Code Pro', "Microsoft YaHei", Helvetica, Arial, sans-serif, 'Ubuntu';
   border: 1px solid #e7e7e7;
   padding: 16px;
   border-radius: 4px;
@@ -2182,7 +2188,7 @@ div.fancybox.stretch>p img {
   color: rgba(68,68,68,0.9);
 }
 .article code {
-  font-family: Menlo, Monaco, courier, monospace, "Lucida Console", 'Source Code Pro', "Microsoft YaHei", Helvetica, Arial, sans-serif, 'Ubuntu';
+  font-family: 'Monaco', Menlo, Monaco, courier, monospace, "Lucida Console", 'Source Code Pro', "Microsoft YaHei", Helvetica, Arial, sans-serif, 'Ubuntu';
   padding: 4px 2px 2px 2px;
   margin: 0;
   vertical-align: middle;
