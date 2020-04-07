@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-06T11:07:53.537Z</updated>
+  <updated>2020-04-07T10:39:23.093Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mysql学习笔记</title>
+    <link href="http://yoursite.com/2020/04/03/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2020/04/03/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2020-04-03T14:49:11.457Z</published>
+    <updated>2020-04-07T10:39:23.093Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="mysql学习笔记"><a href="#mysql学习笔记" class="headerlink" title="mysql学习笔记"></a>mysql学习笔记</h1><h2 id="mysql概述"><a href="#mysql概述" class="headerlink" title="mysql概述"></a>mysql概述</h2><p>mysql是一个关系型数据库管理系统</p><ol><li><p>什么是关系型数据库呢</p><ul><li><p>关系型数据库就是依据关系模型来创建数据库  </p></li><li><p>所谓关系模型就是’一对一、一对多、多对多’等关系模型,关系模型就是指二维表格模型,因而一个关系型数据库就是由二维表及其之间的联系组成的一个数据组织。  </p></li><li><p>关系型数据库可以很好地储存一些关系模型的数据,我举个栗子,就比如一个老师对应多个学生的数据（’多对多’）,一本书有很多人参与写 这本书对应的作者也就是多个作者(‘一对多’),一本书对应一个出版日期(‘一对多’);  </p></li><li><p>关系模型是我们生活中能经常遇见的模型,储存这类数据一版用关系型数据库  </p></li><li><p>关系模型包括数据结构(数据储存的问题,二维表)、操作指令集合(SQL语句)、完整性约束（表内数据约束、表与表之间的约束)。  </p></li></ul></li><li><p>关系型数据库的特点  </p><ul><li><p>安全(因为储存在磁盘中)  </p></li><li><p>易于理解（建立在关系模型上）  </p></li><li><p>弊端 但不节省空间（因为建立在关系模型上,就要遵循某些规则,就比如数据中某字段值即使为空仍要分配空间）</p></li></ul></li><li><p>mysql 服务器的搭建<br> <a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">下载地址</a> 选择你需要的mysql版本</p><ul><li><p>mac环境下安装mysql</p><ol><li><p>下载后 在mac中-&gt;系统偏好设置-&gt;最下边点MySQL 在弹出页面中 打开mysql 服务器(点击start MySQL server)  </p></li><li><p>安装完成后在终端输入一下命令 </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p</span><br></pre></td></tr></table></figure><p>这时会出现Enter password:<br>mac 下是没有密码提示的,直接输入就行了 然后输入你的密码。这时就能访问你数据库的服务器了。</p></li></ol></li></ul></li></ol><pre><code>  3. 打开终端 输入`mysql -u root -p`如果提示commod not found,我们还需要将mysql加入到系统环境变量中          （1).进入/usr/local/mysql/bin查看是否有mysql（mac下默认的路径,如果没有进入系统偏好设置打开mysql的控制面板点击Configuration上面会有些路径)          （2).在终端执行 `vim ~/.bash_profile`在该文件中添加mysql/bin的目录 `PATH=$PATH:/usr/local/mysql/bin` 添加完成后 摁下esc键 然后输入wq 保存最后在命令行输入`source ~/.bash_profile` 完美解决。        登录成功后会显示类似以下的        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">            Welcome to the MySQL monitor.  Commands end with ; or \g.</span><br><span class="line">            Your MySQL connection id is 11</span><br><span class="line">            Server version: 8.0.19 MySQL Community Server - GPL</span><br><span class="line">            Copyright (c) 2000, 2020, Oracle and&#x2F;or its affiliates. All rights reserved.</span><br><span class="line">            &#96;&#96;&#96;  </span><br><span class="line">            退出可使用&#96;exit&#96;或者&#96;quit&#96;;</span><br><span class="line">4. mysql 基本用法</span><br><span class="line">    &gt;mysql语句结束已分号结尾</span><br><span class="line">    &gt;mysql语句语法大小写不敏感但是很多人都用大写觉得更容易看出来,个人觉得小写更直观。</span><br><span class="line">    </span><br><span class="line">    创建一个数据库</span><br></pre></td></tr></table></figure>create database 数据库名;还可以加一层判断crate database if not exists 数据库名;如果数据库不存在在则创建,存在则不创建创建表的时候也对应也可以这样``` 如何查看呢? `show databases;` 查看所有数据库  如何使用呢？ `use 数据库名;`   如何查看数据中的所有表呢？先使用数据库`use 数据库名`然后在输入`show tables;`  显示数据表的属性、属性类型、主键信息、是否为null 默认值等其他信息 ` show column from 表名;` 其实有很多可以查看的语句的  </code></pre><p>   查看数据表的详细索引信息,包括primary key(主键)<code>show index from;</code>  </p><p>   删除某个数据库 <code>drop database 数据库名;</code><br>5. mysql的数据类型</p><ul><li>概述:mysql支持多种分类、大概可以分为三类: 数值、日期/时间和字符(字符串)类型 </li><li>数值类型<br>mysql 支持所有标准SQL数值类型<br>数值类型又分为整数和浮点数(定点数)<br>| tintint      | 很小整数 | 1字节（[0<del>255]、[-128</del>127]);255=2^8-1;127=2^7-1              |<br>| smallint     | 小整数  | 2字节（0-65535、-32768<del>32767);65535=2^16-1                   |<br>| mediumint    | 中等   | 3字节（0</del>16777215）;16777215=2^24-1                          |<br>| int(integer) | 普通   | 4字节 (0~4294967295)；16777215=2^24-1                       |<br>| Biting       | 大整数  | 8字节 (0-18446744073709551615);18446744073709551615=2^64-1 | |</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>javascript</title>
